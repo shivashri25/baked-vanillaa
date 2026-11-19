@@ -1,133 +1,68 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5eee1">
-
   <meta name="description" content="Shivashri's graphic design portfolio — a collection of creative experiments, poster designs and visual stories.">
+  <div class="brand">
+    <img src="baked-vanillaa-logo.png"
+         alt="Baked Vanillaa Studio Logo">
 
-  <title>Baked Vanillaa Studio | Portfolio</title>
-
+    <h2>Baked Vanillaa Studio</h2>
+</div>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
   <header class="topbar">
-
-    <!-- Logo and Studio Name -->
-    <a class="brand" href="#home">
-      <img src="baked-vanillaa-logo.png"
-           alt="Baked Vanillaa Studio Logo">
-
-      <span>Baked Vanillaa Studio</span>
-    </a>
-
-    <button class="menu-toggle"
-            aria-label="Open navigation"
-            aria-expanded="false">☰</button>
-
+    <a class="brand" href="#home" aria-label="baked vanillaa home">baked<span> . </span>vanillaa</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#space">Creative Space</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#tools">Tools</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="active">Home</a><a href="#about">About</a>
+      <a href="#space">Creative Space</a><a href="#gallery">Gallery</a>
+      <a href="#tools">Tools</a><a href="#contact">Contact</a>
     </nav>
-
   </header>
-
   <main>
-
     <section class="slide hero" id="home" aria-label="Portfolio cover">
-      <img src="page-1.png" alt="Portfolio cover">
-      <a class="enter" href="#about">
-        Explore my portfolio <span>↓</span>
-      </a>
+      <img src="page-1.png" alt="Portfolio cover with pink lilies, Shivashri's name and baked.vanillaa">
+      <a class="enter" href="#about">Explore my portfolio <span>↓</span></a>
     </section>
-
     <section class="slide" id="about" aria-label="About me">
-      <img src="page-2.png" alt="About Shivashri">
+      <img src="page-2.png" alt="About Shivashri: aspiring graphic designer who enjoys experimenting with colours, typography and layouts">
     </section>
-
     <section class="slide" id="space" aria-label="My creative space">
-      <img src="page-3.png" alt="My Creative Space">
+      <img src="page-3.png" alt="My Creative Space moodboard with a suitcase and colour palette">
     </section>
-
     <section class="slide gallery" id="gallery" aria-label="The gallery">
-
       <div class="gallery-pages">
-
-        <button class="artwork"
-                data-image="page-4.png"
-                aria-label="Open first gallery page">
-          <img src="page-4.png" alt="First page of poster collection">
-        </button>
-
-        <button class="artwork"
-                data-image="page-5.png"
-                aria-label="Open second gallery page">
-          <img src="page-5.png" alt="Second page of poster collection">
-        </button>
-
+        <button class="artwork" data-image="page-4.png" aria-label="Open gallery poster collection, first page"><img src="page-4.png" alt="First page of poster collection"></button>
+        <button class="artwork" data-image="page-5.png" aria-label="Open gallery poster collection, second page"><img src="page-5.png" alt="Second page of poster collection"></button>
       </div>
-
-      <p class="gallery-hint">
-        A collection of poster experiments — tap either page to view it larger.
-      </p>
-
+      <p class="gallery-hint">A collection of poster experiments — tap either page to view it larger.</p>
     </section>
-
     <section class="slide" id="tools" aria-label="Tools of the trade">
-      <img src="page-6.png" alt="Tools of the trade">
+      <img src="page-6.png" alt="Tools of the trade: Picsart, Pinterest and Canva">
     </section>
-
     <section class="slide contact" id="contact" aria-label="Let's connect">
-
-      <img src="page-7.png" alt="Contact Shivashri">
-
+      <img src="page-7.png" alt="Contact Shivashri by email at sgshivashri@gmail.com or Instagram at baked.vanillaa">
       <div class="contact-links">
-
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sgshivashri@gmail.com"
-           target="_blank"
-           rel="noopener noreferrer">
-          Email Shivashri
-        </a>
-
-        <a href="https://www.instagram.com/baked.vanillaa/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Instagram ↗
-        </a>
-
+        <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=sgshivashri@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Email Shivashri
+</a>
+        <a href="https://www.instagram.com/baked.vanillaa/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
       </div>
-
     </section>
-
   </main>
-
-  <!-- Artwork Preview -->
-  <div class="lightbox"
-       role="dialog"
-       aria-modal="true"
-       aria-label="Artwork preview"
-       hidden>
-
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Artwork preview" hidden>
     <button class="close" aria-label="Close preview">×</button>
-
     <img src="" alt="Expanded poster gallery page">
-
   </div>
-
-  <footer>
-    Made with curiosity by Shivashri ·
-    <a href="#home">Back to top ↑</a>
-  </footer>
-
+  <footer>Made with curiosity by Shivashri · <a href="#home">Back to top ↑</a></footer>
   <script src="script.js"></script>
-
 </body>
 </html>
