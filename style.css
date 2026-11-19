@@ -23,7 +23,9 @@ body {
     font-family: "DM Sans", Arial, sans-serif;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .topbar {
     height: 68px;
@@ -39,7 +41,7 @@ body {
     box-shadow: 0 2px 18px #0002;
 }
 
-/* BRAND LOGO + TITLE */
+/* BRAND LOGO AND TITLE */
 
 .brand {
     display: flex;
@@ -47,7 +49,8 @@ body {
     gap: 12px;
     font-family: Georgia, serif;
     font-style: italic;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: #342b31;
     text-decoration: none;
     letter-spacing: -.04em;
@@ -59,16 +62,16 @@ body {
     height: 48px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #f3dfb5;
+    border: 2px solid #e8c77d;
     flex-shrink: 0;
 }
 
-.brand-name {
+.brand span {
     color: #342b31;
 }
 
-.brand-name .accent {
-    color: #b34c69;
+.brand:hover {
+    opacity: .85;
 }
 
 /* NAVIGATION */
@@ -84,6 +87,7 @@ body {
     text-decoration: none;
     padding: 8px 0;
     border-bottom: 2px solid transparent;
+    transition: .2s ease;
 }
 
 .nav a:hover,
@@ -101,7 +105,9 @@ body {
     cursor: pointer;
 }
 
-/* MAIN CONTENT */
+/* =========================
+   MAIN CONTENT
+========================= */
 
 main {
     max-width: 1500px;
@@ -128,7 +134,9 @@ main {
     box-shadow: 0 18px 55px #0005;
 }
 
-/* HOME */
+/* =========================
+   HOME PAGE
+========================= */
 
 .hero {
     background: #eee7d9;
@@ -151,25 +159,36 @@ main {
     font-size: .9rem;
     box-shadow: 0 4px 18px #0002;
     white-space: nowrap;
+    transition: .2s ease;
+}
+
+.enter:hover {
+    transform: translate(-50%, -3px);
 }
 
 .enter span {
     padding-left: 8px;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT ME
+========================= */
 
 #about {
     background: linear-gradient(120deg, #8d171d, #e93f32);
 }
 
-/* CREATIVE SPACE */
+/* =========================
+   CREATIVE SPACE
+========================= */
 
 #space {
     background: #263022;
 }
 
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 
 .gallery {
     background: #1b171a;
@@ -209,13 +228,17 @@ main {
     text-align: center;
 }
 
-/* TOOLS */
+/* =========================
+   TOOLS
+========================= */
 
 #tools {
     background: #f7b9b0;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     background: #101c35;
@@ -237,13 +260,17 @@ main {
     font-weight: 600;
     font-size: .9rem;
     box-shadow: 0 5px 18px #0004;
+    transition: .2s ease;
 }
 
 .contact-links a:hover {
     background: #e8c9cf;
+    transform: translateY(-3px);
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     padding: 22px;
@@ -258,7 +285,9 @@ footer a {
     text-decoration: none;
 }
 
-/* IMAGE LIGHTBOX */
+/* =========================
+   IMAGE LIGHTBOX
+========================= */
 
 .lightbox {
     position: fixed;
@@ -291,7 +320,9 @@ footer a {
     cursor: pointer;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
 
 @media(max-width: 760px) {
 
@@ -364,9 +395,12 @@ footer a {
     }
 }
 
-/* REDUCED MOTION */
+/* =========================
+   ACCESSIBILITY
+========================= */
 
 @media(prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
